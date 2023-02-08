@@ -53,22 +53,22 @@ for i in range(len(Matrix)-2):
         arr2.append(Matrix[i][j]+Matrix[i][j+1]+Matrix[i][j+2]+Matrix[i+1][j+1]+Matrix[i+2][j]+Matrix[i+2][j+1]+Matrix[i+2][j+2])
 
 
-for i in Matrix:
-    for j in i:
-        while count <= len(i)-2 and count <= len(Matrix)-2:
-            for a in HourGlass:
-                for b in a:
-                    while count1 < len(a)-2:
-                        if b:
-                            each += j
-                        count1 += 1
-                totalPer = each
-                count += 1
-                arr2.append(totalPer)
+# for i in Matrix:
+#     for j in i:
+#         while count <= len(i)-2 and count <= len(Matrix)-2:
+#             for a in HourGlass:
+#                 for b in a:
+#                     while count1 < len(a)-2:
+#                         if b:
+#                             each += j
+#                         count1 += 1
+#                 totalPer = each
+#                 count += 1
+#                 arr2.append(totalPer)
 
 print(max(arr2))
 
-sum = []
+# sum = []
 
 
 # for i in range(len(Matrix)-2):
