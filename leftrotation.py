@@ -26,6 +26,10 @@ print(n[0])
 #         count += 1
 
 alist = list(n)
+
+# Find the list from the index before and after the value for amount of rotation.
+# Add the list from index to beginning onto the end of the list from index to end.
+
 b = alist[d:]+alist[:d]
 
 print(alist[:d])
