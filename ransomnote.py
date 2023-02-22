@@ -17,10 +17,10 @@ def checkMagazine(magazine, note):
     if len(note) == match:
         print(len(note))
         print(match)
-        return True
+        print(True)
     else:
         print(len(note))
         print(match)
-        return False
+        print(False)
 
-print(checkMagazine(magazine,note))
+checkMagazine(magazine,note)
