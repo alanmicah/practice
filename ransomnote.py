@@ -1,6 +1,13 @@
 
-magazine  = 'give me one grand today night'
+magazine  = 'give me one grand today night, night and the night night'
 note  = 'give one grand today'
+
+from collections import Counter
+
+# A Counter is a dict subclass for counting hashable objects
+# https://docs.python.org/3/library/collections.html#collections.Counter
+def ransom_note(magazine, rasom):
+    return (Counter(rasom) - Counter(magazine)) == {}
 
 def checkMagazine(magazine, note): 
     magazine = magazine.split()
@@ -23,4 +30,6 @@ def checkMagazine(magazine, note):
         print(match)
         print(False)
 
-checkMagazine(magazine,note)
+# checkMagazine(magazine,note)
+
+print(ransom_note(magazine, note))
