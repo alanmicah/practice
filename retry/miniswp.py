@@ -11,7 +11,6 @@ print('----')
 # if the keys of the dict don't match the count,
 # then check the inverted dict
 
-
 for i in a:
     x = a[i]
     if x != i:

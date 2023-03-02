@@ -13,6 +13,7 @@ s2 = 'hi'
 def two_strings(s1,s2):
     # sets uses a hashtable
     # hashtables typically have O(1) time complexity
+    # if there is/values that match then returns 'YES'
     return 'YES' if set(s1) & set(s2) else 'NO'
 
 
