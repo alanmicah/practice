@@ -1,3 +1,10 @@
+# In the most basic way, this is what format() does
+"""
+>>> x = "replaced"
+>>> "This is {}!".format(x)
+'This is replaced!
+"""
+
 def print_formatted(number):
     width = len("{0:b}".format(number))
     for i in range(1,number+1):
