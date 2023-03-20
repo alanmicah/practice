@@ -20,4 +20,7 @@ def print_formatted(number):
 
 if __name__ == '__main__':
     n = int(input())
-    print_formatted(n)
+    # print_formatted(n)
+    listn = [n]
+    print('\n'.join('{}:{}'.format(*k) for k in enumerate(listn)))
+    print('Value is:{}'.format(n))
